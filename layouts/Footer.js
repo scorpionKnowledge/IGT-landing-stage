@@ -78,7 +78,9 @@ const DefaultFooter = () => {
             >
               <h6 className="footer-title">Infinity Global Tech</h6>
               <p>
-              At IGT, we support your businesses to run smoother, smarter, and more connected than ever. We help businesses with an upgraded next-gen CRM and automation solution …
+                At IGT, we support your businesses to run smoother, smarter, and
+                more connected than ever. We help businesses with an upgraded
+                next-gen CRM and automation solution …
               </p>
               <div className="social-style-one">
                 <a href="#">
@@ -174,12 +176,16 @@ const DefaultFooter = () => {
                 >
                   <h6 className="footer-title">Career & opportunities</h6>
                   <p>
-                  Join our dynamic team of innovators shaping the future of SaaS & Salesforce solutions. Elevate your career with cutting edge projects, collaborative culture, & limitless growth in a tech-driven ecosystem.
+                    Join our dynamic team of innovators shaping the future of
+                    SaaS & Salesforce solutions. Elevate your career with
+                    cutting edge projects, collaborative culture, & limitless
+                    growth in a tech-driven ecosystem.
                   </p>
-                  <Link legacyBehavior href="mailto:hr@infinityglobaltech.net?subject=Inquiry%20from%20Contact%20Form">
-                    <button className="theme-btn">
-                    Mail us
-                    </button>
+                  <Link
+                    legacyBehavior
+                    href="mailto:hr@infinityglobaltech.net?subject=Inquiry%20from%20Contact%20Form"
+                  >
+                    <button className="theme-btn">Mail us</button>
                   </Link>
                 </div>
               </div>
@@ -195,26 +201,7 @@ const DefaultFooter = () => {
                 data-aos-duration={1000}
                 data-aos-offset={50}
               >
-                <p>
-                &copy; 2025 Infinity Global Tech | All Rights Reserved. Developed by{" "}
-                  <Link
-                    href="https://ejnarstudios.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    ejnarstudios
-                  </Link>{" "}
-                  Powered by{" "}
-                  <Link
-                    href="https://www.sacredtrinitydigiagency.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    SacredTrinityDigiAgency
-                  </Link>
-                </p>
+                <p>&copy; 2025 Infinity Global Tech | All Rights Reserved.</p>
               </div>
             </div>
             <div className="col-xl-7 col-lg-6">
@@ -419,8 +406,8 @@ const Footer2 = () => {
             <div className="col-xl-4 col-lg-6">
               <div className="copyright-text pt-10 text-lg-start text-center">
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -548,8 +535,8 @@ const Footer3 = () => {
                 data-aos-offset={50}
               >
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -776,8 +763,8 @@ const Footer4 = () => {
                 data-aos-offset={50}
               >
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -1015,8 +1002,8 @@ const Footer5 = () => {
                 data-aos-offset={50}
               >
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -1235,8 +1222,8 @@ const Footer6 = () => {
                 data-aos-offset={50}
               >
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -1451,8 +1438,8 @@ const Footer7 = () => {
             <div className="col-xl-4 col-lg-6">
               <div className="copyright-text pt-10 text-lg-start text-center">
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -1682,8 +1669,8 @@ const Footer8 = () => {
                 data-aos-offset={50}
               >
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
@@ -1853,8 +1840,8 @@ const Footer9 = () => {
                 data-aos-offset={50}
               >
                 <p>
-                  Copyright @2024, <Link href="/">Infinity Global Tech </Link> All Rights
-                  Reserved
+                  Copyright @2025, <Link href="/">Infinity Global Tech </Link>{" "}
+                  All Rights Reserved
                 </p>
               </div>
             </div>
