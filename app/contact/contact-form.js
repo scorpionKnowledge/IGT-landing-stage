@@ -1,19 +1,41 @@
-import PageBanner from "@/components/PageBanner";
-import AkpagerLayout from "@/layouts/AkpagerLayout";
-import ContactForm from "./contact-form";
+"use client";
+import { useState } from "react";
 
-export const metadata = {
-  title: {
-    absolute: "Contact Infinity Global Tech | CRM Consulting Experts",
-  },
-};
+const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
 
-const page = () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      phone: e.target.phone.value,
+      message: e.target.message.value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      setStatus(data.message);
+    } catch (err) {
+      setStatus("Failed to send message.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <AkpagerLayout onePage={true}>
-      <PageBanner pageName={"Contact Us"} />
+    <>
       {/* Contact Page Start */}
-      {/* <section className="contact-page py-130 rpy-100">
+      <section className="contact-page py-130 rpy-100">
         <div className="container">
           <div className="row gap-100 align-items-center">
             <div className="col-lg-5">
@@ -43,7 +65,8 @@ const page = () => {
                   <div className="content">
                     <span className="title">Office Location</span>
                     <span className="text">
-                    Askshaya Adora Block A-1, Flat-105, Rajiv Gandhi Salai (OMR) Padur, Chennai-603103
+                      Askshaya Adora Block A-1, Flat-105, Rajiv Gandhi Salai
+                      (OMR) Padur, Chennai-603103
                     </span>
                   </div>
                 </div>
@@ -60,7 +83,9 @@ const page = () => {
                   <div className="content">
                     <span className="title">Email Us</span>
                     <span className="text">
-                      <a href="mailto:hr@infinityglobaltech.net">hr@infinityglobaltech.net</a>
+                      <a href="mailto:hr@infinityglobaltech.net">
+                        hr@infinityglobaltech.net
+                      </a>
                     </span>
                   </div>
                 </div>
@@ -77,7 +102,7 @@ const page = () => {
                   <div className="content">
                     <span className="title">Call Us</span>
                     <span className="text">
-                    <a href="tel:918925899559">+91-89258 99559</a>
+                      <a href="tel:918925899559">+91-89258 99559</a>
                     </span>
                   </div>
                 </div>
@@ -95,8 +120,9 @@ const page = () => {
                   id="contactForm"
                   className="contactForm"
                   name="contactForm"
-                  action="assets/php/form-process.php"
-                  method="post"
+                  //   action="assets/php/form-process.php"
+                  //   method="post"
+                  onSubmit={handleSubmit}
                 >
                   <img
                     className="shape-one"
@@ -147,7 +173,7 @@ const page = () => {
                     </div>
                     <div className="col-md-12">
                       <div className="form-group">
-                        <label htmlFor="subject">Phone</label>
+                        <label htmlFor="phone">Phone</label>
                         <input
                           type="number"
                           id="phone"
@@ -177,12 +203,27 @@ const page = () => {
                         <div className="help-block with-errors" />
                       </div>
                     </div>
+
                     <div className="col-md-12">
                       <div className="form-group mb-0">
-                        <button type="submit" className="theme-btn">
+                        {/* <button type="submit" className="theme-btn">
                           Send Us Message <i className="far fa-arrow-right" />
+                        </button> */}
+                        {/* <div id="msgSubmit" className="hidden" /> */}
+                        <button
+                          type="submit"
+                          className="theme-btn"
+                          disabled={loading}
+                        >
+                          {loading ? "Sending..." : "Send Us Message"}
                         </button>
-                        <div id="msgSubmit" className="hidden" />
+                      </div>
+                    </div>
+                    <div className="col-md-12">
+                      <div className="form-group mt-4">
+                        {status && (
+                          <p className="text-primary text-end">{status}</p>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -191,23 +232,8 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section> */}
-      <ContactForm />
-      {/* Contact Page End */}
-      {/* Location Map Area Start */}
-      <div className="contact-page-map mb-150">
-        <div className="our-location">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5025.264211292962!2d80.22265387607867!3d12.809176887491445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525a78e83b0f7d%3A0x721a832747558573!2sAkshaya%20Adora!5e1!3m2!1sen!2sin!4v1759427504388!5m2!1sen!2sin"
-            style={{ border: 0, width: "100%" }}
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      {/* Location Map Area End */}
-    </AkpagerLayout>
+      </section>
+    </>
   );
 };
-export default page;
+export default ContactForm;
