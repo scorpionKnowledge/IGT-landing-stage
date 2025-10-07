@@ -204,7 +204,7 @@ const DefaultFooter = () => {
                 <p>&copy; 2025 Infinity Global Tech | All Rights Reserved.</p>
               </div>
             </div>
-            <div className="col-xl-7 col-lg-6">
+            {/* <div className="col-xl-7 col-lg-6">
               <div
                 className="footer-bottom-menu text-lg-end text-center"
                 data-aos="fade-right"
@@ -226,7 +226,7 @@ const DefaultFooter = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* Scroll Top Button */}
           <button className="scroll-top scroll-to-target" data-target="html">

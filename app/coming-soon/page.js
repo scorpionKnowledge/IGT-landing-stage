@@ -64,8 +64,8 @@ const page = () => {
               </div>
               {/* Menu Button */}
               <div className="menu-btn ms-auto d-none d-sm-flex">
-                <Link href="contact" className="theme-btn">
-                  Get Started <i className="far fa-arrow-right" />
+                <Link href="/contact" className="theme-btn">
+                  Contact us <i className="far fa-arrow-right" />
                 </Link>
               </div>
             </div>
