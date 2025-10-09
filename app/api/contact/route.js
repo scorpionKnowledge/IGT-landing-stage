@@ -26,7 +26,7 @@ export async function POST(req) {
     // Send email
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: "info@infinityglobaltech.net", // change to your receiving email
+      to: "igt@infinityglobaltech.net", // change to your receiving email
       subject: `New Contact Form Submission`,
       html: `
         <h2>New Contact Request</h2>

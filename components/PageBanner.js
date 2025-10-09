@@ -7,11 +7,11 @@ const Tag = ({ tagName, children, ...props }) =>
 const PageBanner = ({ pageTitle, pageName, titleTag = "h1" }) => {
   return (
     <section
-      className="page-banner-area overlay py-250 rpy-120 rel z-1 bgs-cover text-center"
+      className="page-banner-area overlay py-150 rpy-80 rel z-1 bgs-cover text-center"
       style={{ backgroundImage: "url(assets/images/backgrounds/banner.jpg)" }}
     >
       <div className="container">
-        <div className="banner-inner pt-70 rpt-60 text-white">
+        <div className="banner-inner rpt-60 text-white">
           <Tag
             tagName={titleTag}
             className="page-title"

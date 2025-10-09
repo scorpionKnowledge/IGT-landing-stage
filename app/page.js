@@ -1,9 +1,23 @@
 import Counter from "@/components/Counter";
+
 import AkpagerLayout from "@/layouts/AkpagerLayout";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-const TestimonialSlider = dynamic(
-  () => import("@/components/TestimonialSlider"),
+
+// const TestimonialSlider = dynamic(
+//   () => import("@/components/TestimonialSlider"),
+//   {
+//     ssr: false,
+//   }
+// );
+const TestimonialSliderCaseStudy = dynamic(
+  () => import("@/components/TestimonialSlider-casestudy"),
+  {
+    ssr: false,
+  }
+);
+const TestimonialSliderTesti = dynamic(
+  () => import("@/components/TestimonialSlider-testi"),
   {
     ssr: false,
   }
@@ -15,20 +29,21 @@ const Index = () => {
       {/* Hero area start */}
       <section
         className="hero-area bgs-cover py-250 rpy-150 overlay"
-        style={{ backgroundImage: "url(assets/images/hero/hero-one.png)" }}
+        style={{ backgroundImage: "url(assets/images/imgs/herobg.jpeg)" }}
       >
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-7 col-lg-10 col-md-11">
+            {/* <div className="col-xl-7 col-lg-10 col-md-11"> */}
+            <div className="col-xl-12 col-lg-9 col-md-10">
               <div className="hero-content text-center text-white">
-                <span
+                {/* <span
                   className="subtitle-one mb-20"
                   data-aos="fade-up"
                   data-aos-duration={1500}
                   data-aos-offset={50}
                 >
                   <i className="fas fa-chart-line" /> BEST ANALYTICS TOOL
-                </span>
+                </span> */}
                 <h1
                   className="mb-3"
                   data-aos="fade-up"
@@ -36,10 +51,18 @@ const Index = () => {
                   data-aos-duration={1500}
                   data-aos-offset={50}
                 >
-                  Introducing the next generation Software Analytics
+                  Empowering Real Estate, Health Care, Manufacturing,
+                  Automotive, and beyond with Smart Salesforce Solutions.
                 </h1>
-                <p>
-                IGT delivers purpose-built, performance optimized Salesforce implementations tailored to your business objectives
+                <p
+                  data-aos="fade-up"
+                  data-aos-delay={200}
+                  data-aos-duration={1500}
+                  data-aos-offset={50}
+                >
+                  We help businesses to streamline sales, automate customer
+                  management, and grow faster using custom Salesforce CRM
+                  solutions.
                 </p>
                 <div
                   className="hero-btns"
@@ -87,15 +110,16 @@ const Index = () => {
                   </div>
                   <div className="content">
                     <h4>
-                      <Link legacyBehavior href="service-details">
-                      CRM Consulting
+                      <Link legacyBehavior href="/services">
+                        CRM Consulting
                       </Link>
                     </h4>
                     <p>
-                    Tailored consultation enhances client relations, boosts efficiency, & drives business excellence.
+                      Tailored consultation enhances client relations, boosts
+                      efficiency, & drives business excellence.
                     </p>
                     <hr />
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/services">
                       <a className="read-more">
                         Read More <i className="far fa-arrow-right" />
                       </a>
@@ -122,15 +146,16 @@ const Index = () => {
                   </div>
                   <div className="content">
                     <h4>
-                      <Link legacyBehavior href="service-details">
-                      Optimize sales channels
+                      <Link legacyBehavior href="/services">
+                        Optimize sales channels
                       </Link>
                     </h4>
                     <p>
-                    Streamline strategies to maximise revenue across all sales touchpoints efficiently.
+                      Streamline strategies to maximise revenue across all sales
+                      touchpoints efficiently.
                     </p>
                     <hr />
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/services">
                       <a className="read-more">
                         Read More <i className="far fa-arrow-right" />
                       </a>
@@ -157,15 +182,16 @@ const Index = () => {
                   </div>
                   <div className="content">
                     <h4>
-                      <Link legacyBehavior href="service-details">
-                      App Development
+                      <Link legacyBehavior href="/services">
+                        App Development
                       </Link>
                     </h4>
                     <p>
-                    Elegant, tailored apps blending innovation, functionality, and seamless user experience.
+                      Elegant, tailored apps blending innovation, functionality,
+                      and seamless user experience.
                     </p>
                     <hr />
-                    <Link legacyBehavior href="/service-details">
+                    <Link legacyBehavior href="/services">
                       <a className="read-more">
                         Read More <i className="far fa-arrow-right" />
                       </a>
@@ -190,17 +216,16 @@ const Index = () => {
                 data-aos-offset={50}
               >
                 <div className="text">
-                  Business consulting involves the provision expert advice and
-                  guidance to organizations seeking to improve their
-                  performance, solve specific problems, or achieve specific
-                  objectives. The primary purpose of business consultants is to
-                  leverage their expertise and experience to help clients make
-                  informed decisions, develop strategies, and implement
+                  "Necessity is the mother of invention and digitisation is more
+                  important than ever. Winning companies are prioritizing speed
+                  and adaptability to both make it through the storm and seize
+                  emerging opportunities,
                 </div>
                 <div className="author">
-                  <img src="assets/images/blog/blockquote.png" alt="Author" />
+                  <img src="assets/images/teams/sunil_jose.jpeg" alt="Author" />
                   <div className="name">
-                    <h5>Ricky J. Winter/</h5> <span>CEO &amp; Founder</span>
+                    <h5>Sunil Jose,</h5>{" "}
+                    <span>Senior Vice President, Salesforce India</span>
                   </div>
                 </div>
               </blockquote>
@@ -213,364 +238,375 @@ const Index = () => {
       <section className="about-area py-90 rpy-60">
         <div className="container">
           <div className="row gap-90 align-items-center">
-            <div className="col-lg-6">
+            <div className="col-xl-6 col-lg-5">
               <div
-                className="about-images my-40"
+                className="about-images my-20"
                 data-aos="fade-left"
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <img src="assets/images/about/about-four.png" alt="About" />
+                <img src="assets/images/imgs/company.jpg" alt="About" />
                 {/* <div className="about-over">
                   <img src="assets/images/about/about2.png" alt="About" />
                 </div> */}
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-xl-6 col-lg-7">
               <div
                 className="about-content mt-40 rmt-15"
                 data-aos="fade-right"
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <span className="subtitle d-block mb-10">
-                About Us
-                </span>
+                <span className="subtitle d-block mb-10">About Us</span>
 
                 <div className="section-title mb-30">
+                  <h2>Guided by Legacy, Driven by Innovation</h2>
+                </div>
+                <p>
+                  Infinity Global Tech (IGT) is a Salesforce consulting and
+                  technology solutions company helping businesses transform
+                  operations through CRM innovation and automation.
+                </p>
+                <div className="row">
+                  <div className="col-lg-6">
+                    <h4>Vision:</h4>
+                    <p>
+                      To be a trusted digital partner delivering scalable and
+                      intelligent Salesforce solutions across industries.
+                    </p>
+                  </div>
+                  <div className="col-lg-6">
+                    <h4>Mission:</h4>
+                    <p>
+                      To simplify technology adoption for businesses and empower
+                      teams through powerful CRM systems that drive measurable
+                      results.
+                    </p>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col-lg-12">
+                    <h5>Core Values:</h5>
+                    <ul className="dot-list">
+                      <li>Integrity in every engagement</li>
+                      <li>Client-first approach</li>
+                      <li>Innovation through technology</li>
+                      <li>Commitment to quality and delivery</li>
+                    </ul>
+                    <br />
+                  </div>
+                  <div className="col-lg-12">
+                    <h5>Strengths:</h5>
+                    <ul className="dot-list">
+                      <li>
+                        Expertise in Salesforce customization for real estate,
+                        manufacturing, and enterprise clients
+                      </li>
+                      <li>Agile delivery model with end-to-end support</li>
+                      <li>Cost-effective implementation strategies</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className="row gap-90 align-items-center">
+            <div className="flex flex-col md:flex-row gap-2">
+              <div>
+                <h5>Core Values:</h5>
+                <ul>
+                  <li>Integrity in every engagement</li>
+                  <li>Client-first approach</li>
+                  <li>Innovation through technology</li>
+                  <li>Commitment to quality and delivery</li>
+                </ul>
+              </div>
+              <div>
+                <h5>Strengths:</h5>
+                <ul>
+                  <li>
+                    Expertise in Salesforce customization for real estate,
+                    manufacturing, and enterprise clients
+                  </li>
+                  <li>Agile delivery model with end-to-end support</li>
+                  <li>Cost-effective implementation strategies</li>
+                </ul>
+              </div>
+            </div>
+          </div> */}
+        </div>
+      </section>
+      {/* About Area End */}
+      <section className="innovation-dedication-area py-130 rpy-100">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div
+                className="innovation-dedication-content rmb-55"
+                data-aos="fade-left"
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <div className="section-title mb-30 team-title">
                   <h2>
-                  Guided by Legacy, Driven by Innovation
+                    Vijayakumar
+                    <i>Founder, Infinity Global Tech</i>
                   </h2>
                 </div>
                 <p>
-                  Meet Mr. Vijayakumar, our Founder. He's not just leading the way; he's a visionary entrepreneur with a strong foundation from the well-respected Mallika Batteries family (yes, the one established way back in 1955!). Add to that his 13+ years of hands-on experience in a leading architectural firm, and his role as an independent consultant and facilitator in obtaining statutory approvals for townships and industries.
+                  A visionary entrepreneur with deep business roots in the
+                  well-known Mallika Batteries family, established way back in
+                  1955. After spending many years working with a leading
+                  architectural firm and helping industries and townships
+                  navigate complex approvals, he discovered his real passion —
+                  using technology to simplify business challenges.
                 </p>
                 <p>
-                  Thus, with his bespoke experiences and value-centric approach, Infinity Global Tech is positioned as a trusted technology partner in the dynamic tech ecosystem. We deliver high-impact Salesforce capabili-ties that drive real business transformation. By providing such innovative solutions, IGT has gained the trust of the clients that forged the path for long-lasting partnership and mutual success.
+                  That passion led to the birth of <b>Infinity Global Tech</b> —
+                  a company built on trust, innovation, and a strong belief that
+                  technology should empower people. Today, under his leadership,
+                  IGT helps businesses harness the power of{" "}
+                  <b>Salesforce CRM</b> to work smarter, connect better, and
+                  grow faster.
                 </p>
-                <div className="row pt-30 d-none">
-                  <div className="col-sm-6">
-                    <div className="counter-item counter-text-wrap counted">
-                      <span
-                        className="count-text percent"
-                        data-speed={3000}
-                        data-stop={95}
-                      >
-                        95
-                      </span>
-                      <h5 className="counter-title">Strategy Consulting</h5>
-                      <div className="text">
-                        Strategy consultants work closely organizations define
-                        their
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="counter-item counter-text-wrap counted">
-                      <span
-                        className="count-text percent"
-                        data-speed={3000}
-                        data-stop={85}
-                      >
-                        85
-                      </span>
-                      <h5 className="counter-title">Financial Consulting</h5>
-                      <div className="text">
-                        Financial consultants provides the financial planning,
-                        budgeting
-                      </div>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="innovation-dedication-images">
+                <div
+                  // className="image-one"
+                  data-aos="fade-right"
+                  data-aos-duration={1500}
+                  data-aos-offset={50}
+                >
+                  <img
+                    src="assets/images/teams/vijaykumar.png"
+                    alt="vijaykumar"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* About Area End */}
-      {/* Solutions Area End */}
-      <section className="solutions-area pb-100 rpb-70">
+      {/* Innovation Dedication Area End */}
+      {/* Team Area Start */}
+      <section className="team-area pb-80 rpb-50">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-xl-7 col-lg-9 col-md-11">
+            <div className="col-xl-7 col-lg-9">
               <div
-                className="section-title text-center mb-60"
+                className="section-title text-center mb-55"
                 data-aos="fade-up"
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <h2>Discover Company Solutions Tailored to Your Needs</h2>
-                <p>
-                  Sed ut perspiciatis unde omnis iste sit voluptatem accusantium
-                  doloremque laudantium rem aperiam eaqups quae ab illo
-                  inventore veritatis et quasi architecto{" "}
-                </p>
+                <h2>Let’s Meet Our Professionals Team Members</h2>
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
-            <div className="col-xl-4 col-md-6 col-sm-10">
+          <div className="row">
+            <div className=" col-lg-4 col-sm-6">
               <div
-                className="fancy-box"
+                className="team-member"
                 data-aos="fade-up"
                 data-aos-duration={1000}
                 data-aos-offset={50}
               >
-                <div className="image">
-                  <img
-                    src="assets/images/fancy-box/fancy-box1.jpg"
-                    alt="Fancy Box"
-                  />
+                <div className="image cursor-pointer">
+                  <Link href="/about" legacyBehavior>
+                    <img src="assets/images/teams/bushan.jpeg" alt="Team" />
+                  </Link>
+                  <div className="social-media">
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-pinterest-p" />
+                    </a>
+                  </div>
                 </div>
-                <div className="content">
-                  <div className="icon-title">
-                    <i className="flaticon-meeting" />
-                    <h5>
-                      <Link legacyBehavior href="service-details">
-                        Business Consulting
-                      </Link>
-                    </h5>
-                  </div>
-                  <div className="inner-content">
-                    <p>
-                      Assisting clients with financial planning, budgeting,
-                      investment strategies
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
+                <div className="description">
+                  <h5>Bushan Babu</h5>
+                  <span className="designation">Admin &amp; HR</span>
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6 col-sm-10">
+            <div className=" col-lg-4 col-sm-6">
               <div
-                className="fancy-box"
+                className="team-member"
+                data-aos="fade-up"
+                data-aos-delay={200}
+                data-aos-duration={1000}
+                data-aos-offset={50}
+              >
+                <div className="image cursor-pointer">
+                  <Link href="/about" legacyBehavior>
+                    <img src="assets/images/teams/suvarna.jpeg" alt="Team" />
+                  </Link>
+                  <div className="social-media">
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-pinterest-p" />
+                    </a>
+                  </div>
+                </div>
+                <div className="description">
+                  <h5>Suvarna</h5>
+                  <span className="designation">Business Analyst</span>
+                </div>
+              </div>
+            </div>
+            <div className=" col-lg-4 col-sm-6">
+              <div
+                className="team-member"
+                data-aos="fade-up"
+                data-aos-delay={400}
+                data-aos-duration={1000}
+                data-aos-offset={50}
+              >
+                <div className="image cursor-pointer">
+                  <Link href="/about" legacyBehavior>
+                    <img src="assets/images/teams/sravya.jpeg" alt="Team" />
+                  </Link>
+                  <div className="social-media">
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-pinterest-p" />
+                    </a>
+                  </div>
+                </div>
+                <div className="description">
+                  <h5>Sravya</h5>
+                  <span className="designation">Developer</span>
+                </div>
+              </div>
+            </div>
+            <div className=" col-lg-4 col-sm-6">
+              <div
+                className="team-member"
+                data-aos="fade-up"
+                data-aos-delay={600}
+                data-aos-duration={1000}
+                data-aos-offset={50}
+              >
+                <div className="image cursor-pointer">
+                  <Link href="/about" legacyBehavior>
+                    <img src="assets/images/teams/prabhu.jpeg" alt="Team" />
+                  </Link>
+                  <div className="social-media">
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-pinterest-p" />
+                    </a>
+                  </div>
+                </div>
+                <div className="description">
+                  <h5>Prabhu</h5>
+                  <span className="designation">Developer</span>
+                </div>
+              </div>
+            </div>
+            <div className=" col-lg-4 col-sm-6">
+              <div
+                className="team-member"
+                data-aos="fade-up"
+                data-aos-duration={1000}
+                data-aos-offset={50}
+              >
+                <div className="image cursor-pointer">
+                  <Link href="/about" legacyBehavior>
+                    <img src="assets/images/team/member6.png" alt="Team" />
+                  </Link>
+                  <div className="social-media">
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-pinterest-p" />
+                    </a>
+                  </div>
+                </div>
+                <div className="description">
+                  <h5>Chandrakala</h5>
+                  <span className="designation">Quality Assurance</span>
+                </div>
+              </div>
+            </div>
+            {/* <div className=" col-lg-4 col-sm-6">
+              <div
+                className="team-member"
                 data-aos="fade-up"
                 data-aos-delay={200}
                 data-aos-duration={1000}
                 data-aos-offset={50}
               >
                 <div className="image">
-                  <img
-                    src="assets/images/fancy-box/fancy-box2.jpg"
-                    alt="Fancy Box"
-                  />
+                  <img src="assets/images/team/member6.png" alt="Team" />
+                  <div className="social-media">
+                    <a href="#">
+                      <i className="fab fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="#">
+                      <i className="fab fa-pinterest-p" />
+                    </a>
+                  </div>
                 </div>
-                <div className="content">
-                  <div className="icon-title">
-                    <i className="flaticon-financial-advisor" />
-                    <h5>
-                      <Link legacyBehavior href="service-details">
-                        Financial Advisory
-                      </Link>
-                    </h5>
-                  </div>
-                  <div className="inner-content" style={{ display: "none" }}>
-                    <p>
-                      Assisting clients with financial planning, budgeting,
-                      investment strategies
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
+                <div className="description">
+                  <h5>Flores, Juanita</h5>
+                  <span className="designation">Vice President</span>
                 </div>
               </div>
-            </div>
-            <div className="col-xl-4 col-md-6 col-sm-10">
-              <div
-                className="fancy-box"
-                data-aos="fade-up"
-                data-aos-delay={400}
-                data-aos-duration={1000}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <img
-                    src="assets/images/fancy-box/fancy-box3.jpg"
-                    alt="Fancy Box"
-                  />
-                </div>
-                <div className="content">
-                  <div className="icon-title">
-                    <i className="flaticon-meeting" />
-                    <h5>
-                      <Link legacyBehavior href="service-details">
-                        Marketing &amp; Branding
-                      </Link>
-                    </h5>
-                  </div>
-                  <div className="inner-content" style={{ display: "none" }}>
-                    <p>
-                      Assisting clients with financial planning, budgeting,
-                      investment strategies
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6 col-sm-10">
-              <div
-                className="fancy-box"
-                data-aos="fade-up"
-                data-aos-duration={1000}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <img
-                    src="assets/images/fancy-box/fancy-box4.jpg"
-                    alt="Fancy Box"
-                  />
-                </div>
-                <div className="content">
-                  <div className="icon-title">
-                    <i className="flaticon-brand-identity" />
-                    <h5>
-                      <Link legacyBehavior href="service-details">
-                        Marketing &amp; Branding
-                      </Link>
-                    </h5>
-                  </div>
-                  <div className="inner-content" style={{ display: "none" }}>
-                    <p>
-                      Assisting clients with financial planning, budgeting,
-                      investment strategies
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6 col-sm-10">
-              <div
-                className="fancy-box"
-                data-aos="fade-up"
-                data-aos-delay={200}
-                data-aos-duration={1000}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <img
-                    src="assets/images/fancy-box/fancy-box5.jpg"
-                    alt="Fancy Box"
-                  />
-                </div>
-                <div className="content">
-                  <div className="icon-title">
-                    <i className="flaticon-technology" />
-                    <h5>
-                      <Link legacyBehavior href="service-details">
-                        IT and Technology
-                      </Link>
-                    </h5>
-                  </div>
-                  <div className="inner-content" style={{ display: "none" }}>
-                    <p>
-                      Assisting clients with financial planning, budgeting,
-                      investment strategies
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6 col-sm-10">
-              <div
-                className="fancy-box"
-                data-aos="fade-up"
-                data-aos-delay={400}
-                data-aos-duration={1000}
-                data-aos-offset={50}
-              >
-                <div className="image">
-                  <img
-                    src="assets/images/fancy-box/fancy-box6.jpg"
-                    alt="Fancy Box"
-                  />
-                </div>
-                <div className="content">
-                  <div className="icon-title">
-                    <i className="flaticon-talent-search" />
-                    <h5>
-                      <Link legacyBehavior href="service-details">
-                        Human Resources
-                      </Link>
-                    </h5>
-                  </div>
-                  <div className="inner-content" style={{ display: "none" }}>
-                    <p>
-                      Assisting clients with financial planning, budgeting,
-                      investment strategies
-                    </p>
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
-      {/* Solutions Area End */}
+      {/* Team Area End */}
       {/* CTA Area Start */}
-      <section
+      {/* <section
         className="cta-area bgs-cover py-130 rpy-100"
         style={{ backgroundImage: "url(assets/images/backgrounds/cta.jpg)" }}
       >
@@ -584,12 +620,11 @@ const Index = () => {
                 data-aos-offset={50}
               >
                 <div className="section-title mb-40">
-                  {/* <span className="subtitle d-block mb-10">
-                    Website Builder
-                  </span> */}
-                  <h2>Ready to get started? <br />
+                  
+                  <h2>
+                    Ready to get started? <br />
                     Get your free consultation today
-                    </h2>
+                  </h2>
                 </div>
                 <Link legacyBehavior href="/contact">
                   <a className="theme-btn">
@@ -614,7 +649,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* CTA Area End */}
       {/* Recent Projects Area End */}
       <section className="project-area pt-130 rpt-100 pb-100 rpb-70">
@@ -627,15 +662,16 @@ const Index = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <h2>Our domain expertise spans across</h2>
-                <p>
-                Our core services that are built to provide exceptional digital transformation for your business
-                </p>
+                <h2>Our key offerings</h2>
+                {/* <p>
+                  Our core services that are built to provide exceptional
+                  digital transformation for your business
+                </p> */}
               </div>
             </div>
           </div>
           <div className="row justify-content-center">
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-4 col-md-6 col-sm-8">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -650,41 +686,18 @@ const Index = () => {
                 </div>
                 <div className="content">
                   <a href="#" className="category">
-                  CRM Consulting
+                    Salesforce CRM Consulting
                   </a>
-                  <h6>
-                    <Link legacyBehavior href="service-details">
-                    How We Transformed Client's Operations
-                    </Link>
-                  </h6>
-                  <div
-                    className="inner-content"
-                    style={{
-                      display: "block",
-                      overflow: "hidden",
-                      height: "0.0041635px",
-                      paddingTop: 0,
-                      marginTop: 0,
-                      paddingBottom: 0,
-                      marginBottom: 0,
-                    }}
-                  >
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-two-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
+                  <ul className="dot-list-bold">
+                    <li>
+                      Assess, plan, and implement tailored Salesforce solutions.
+                    </li>
+                    <li>Optimize workflows and improve sales performance.</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-4 col-md-6 col-sm-8">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -700,30 +713,22 @@ const Index = () => {
                 </div>
                 <div className="content">
                   <a href="#" className="category">
-                    Financeal
+                    Custom App Development
                   </a>
-                  <h6>
-                    <Link legacyBehavior href="service-details">
-                      Journey with Our Service Financial Story
-                    </Link>
-                  </h6>
-                  <div className="inner-content">
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-two-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
+                  <ul className="dot-list-bold">
+                    <li>
+                      Develop scalable Salesforce applications for
+                      business-specific needs.
+                    </li>
+                    <li>
+                      Integrate automation, analytics, and intuitive user
+                      interfaces.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-4 col-md-6 col-sm-8">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -739,30 +744,19 @@ const Index = () => {
                 </div>
                 <div className="content">
                   <a href="#" className="category">
-                    Research
+                    Integration Services
                   </a>
-                  <h6>
-                    <Link legacyBehavior href="service-details">
-                      Innovative Solutions in Action User Research
-                    </Link>
-                  </h6>
-                  <div className="inner-content">
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-two-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
+                  <ul className="dot-list-bold">
+                    <li>
+                      Connect Salesforce with ERP, Finance, HR, or Marketing
+                      systems.
+                    </li>
+                    <li>Ensure seamless data flow across departments.</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-4 col-md-6 col-sm-8">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -778,26 +772,45 @@ const Index = () => {
                 </div>
                 <div className="content">
                   <a href="#" className="category">
-                    Development
+                    Real Estate CRM Solutions
                   </a>
-                  <h6>
-                    <Link legacyBehavior href="service-details">
-                      Proven Results Client’s with Our Solutions
-                    </Link>
-                  </h6>
-                  <div className="inner-content">
-                    <Link legacyBehavior href="/service-details">
-                      <a className="read-more">
-                        Read More <i className="far fa-arrow-right" />
-                      </a>
-                    </Link>
-                  </div>
-                  <div className="bg">
-                    <img
-                      src="assets/images/shapes/fancy-box-two-bg.png"
-                      alt="Shape"
-                    />
-                  </div>
+                  <ul className="dot-list-bold">
+                    <li>
+                      Lead tracking, property listings, booking management, and
+                      customer analytics.
+                    </li>
+                    <li>
+                      Customized dashboards for builders, agents, and
+                      developers.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-8">
+              <div
+                className="fancy-box style-two"
+                data-aos="fade-up"
+                data-aos-duration={1000}
+                data-aos-offset={50}
+              >
+                <div className="image">
+                  <img
+                    src="assets/images/fancy-box/fancy-box-two1.jpg"
+                    alt="Fancy Box"
+                  />
+                </div>
+                <div className="content">
+                  <a href="#" className="category">
+                    Support & Maintenance
+                  </a>
+                  <ul className="dot-list-bold">
+                    <li>24/7 technical assistance and system upgrades.</li>
+                    <li>
+                      Data backup, troubleshooting, and performance
+                      optimization.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -926,10 +939,7 @@ const Index = () => {
                 <div className="section-title mb-30">
                   <h2>Take Effect Control of Business Management</h2>
                 </div>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus voluptatem
-                  accusantium doloremque laudantium totamto aperiame eaque
-                </p>
+
                 <div className="row gap-50 pt-25">
                   <div className="col-md-6">
                     <div className="iconic-box style-nine text-white">
@@ -942,9 +952,6 @@ const Index = () => {
                             Mobile Friendly
                           </Link>
                         </h5>
-                        <p>
-                          Mistaken denouncing pleasure praising born will give
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -959,10 +966,6 @@ const Index = () => {
                             Powerful Prediction
                           </Link>
                         </h5>
-                        <p>
-                          At vero eos et accus amusesy praesen deleniti
-                          corruptie
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -1003,16 +1006,19 @@ const Index = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <h2>1253+ Global Clients Say About Our Business Services</h2>
+                <h2>Case Studies</h2>
               </div>
             </div>
           </div>
         </div>
-        <TestimonialSlider />
+        <div className="case-studies-slider">
+          {/* <TestimonialSlider /> */}
+          <TestimonialSliderCaseStudy />
+        </div>
       </section>
       {/* Testimonials Area End */}
       {/* Blog Area Start */}
-      <section className="blog-area pb-100 rpb-70">
+      {/* <section className="blog-area pb-100 rpb-70">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-9 col-md-11">
@@ -1139,18 +1145,37 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Blog Area End */}
+
+      <section className="testimonials-area pt-130 rpt-100 pb-80 rpb-50">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-xl-7 col-lg-9 col-md-11">
+              <div
+                className="section-title text-center mb-60"
+                data-aos="fade-up"
+                data-aos-duration={1500}
+                data-aos-offset={50}
+              >
+                <h2>Testimonials / Clients</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <TestimonialSliderTesti />
+      </section>
+
       {/* Client Logos Area Start */}
       <section className="client-logo-area pb-90 rpb-65">
-        <div
+        {/* <div
           className="section-title text-center mb-60"
           data-aos="fade-up"
           data-aos-duration={1500}
           data-aos-offset={50}
         >
           <h4>I’ve 1253+ Global Clients &amp; lot’s of Project Complete</h4>
-        </div>
+        </div> */}
         <div className="client-logo-wrap">
           <div
             className="client-logo-item"
@@ -1160,7 +1185,7 @@ const Index = () => {
           >
             <a href="#">
               <img
-                src="assets/images/client-logos/client-logo-two1.png"
+                src="assets/images/imgs/brand/logo001.png"
                 alt="Client Logo"
               />
             </a>
@@ -1174,91 +1199,7 @@ const Index = () => {
           >
             <a href="#">
               <img
-                src="assets/images/client-logos/client-logo-two2.png"
-                alt="Client Logo"
-              />
-            </a>
-          </div>
-          <div
-            className="client-logo-item"
-            data-aos="fade-up"
-            data-aos-delay={200}
-            data-aos-duration={1000}
-            data-aos-offset={50}
-          >
-            <a href="#">
-              <img
-                src="assets/images/client-logos/client-logo-two3.png"
-                alt="Client Logo"
-              />
-            </a>
-          </div>
-          <div
-            className="client-logo-item"
-            data-aos="fade-up"
-            data-aos-delay={300}
-            data-aos-duration={1000}
-            data-aos-offset={50}
-          >
-            <a href="#">
-              <img
-                src="assets/images/client-logos/client-logo-two4.png"
-                alt="Client Logo"
-              />
-            </a>
-          </div>
-          <div
-            className="client-logo-item"
-            data-aos="fade-up"
-            data-aos-delay={400}
-            data-aos-duration={1000}
-            data-aos-offset={50}
-          >
-            <a href="#">
-              <img
-                src="assets/images/client-logos/client-logo-two5.png"
-                alt="Client Logo"
-              />
-            </a>
-          </div>
-          <div
-            className="client-logo-item"
-            data-aos="fade-up"
-            data-aos-delay={500}
-            data-aos-duration={1000}
-            data-aos-offset={50}
-          >
-            <a href="#">
-              <img
-                src="assets/images/client-logos/client-logo-two6.png"
-                alt="Client Logo"
-              />
-            </a>
-          </div>
-          <div
-            className="client-logo-item"
-            data-aos="fade-up"
-            data-aos-delay={600}
-            data-aos-duration={1000}
-            data-aos-offset={50}
-          >
-            <a href="#">
-              <img
-                src="assets/images/client-logos/client-logo-two7.png"
-                alt="Client Logo"
-              />
-            </a>
-          </div>
-          <div
-            className="client-logo-item"
-            data-aos="fade-up"
-            data-aos-delay={700}
-            data-aos-duration={1000}
-            data-aos-offset={50}
-          >
-            <a href="#">
-              <img
-                src="assets/images/client-logos/client-logo-two8.png"
+                src="assets/images/imgs/brand/logo002.png"
                 alt="Client Logo"
               />
             </a>

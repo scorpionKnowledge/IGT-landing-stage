@@ -1,0 +1,53 @@
+/* Custom style */
+.dot-list {
+  list-style: disc !important;
+  padding-left: 2rem;
+}
+
+.dot-list li {
+  list-style: disc !important;
+}
+.dot-list-bold {
+  list-style: disc !important;
+  padding-left: 1rem;
+}
+
+.dot-list-bold li {
+  list-style: disc !important;
+  font-weight: 700;
+  color: #000;
+}
+.fancy-box.style-two:hover .content .dot-list-bold li {
+  color: #ffffff;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.team-title h2 i {
+  color: var(--primary-color);
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/* .case-studies-slider .slick-track {
+  width: auto !important;
+  margin: auto !important;
+  display: table;
+  align-items: center;
+}
+.case-studies-slider .slick-track .slick-slide {
+  margin-left: 5px;
+  margin-right: 5px;
+} */
+
+.case-studies-slider .testimonial-item .author-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--heading-color);
+  letter-spacing: -0.72px;
+}

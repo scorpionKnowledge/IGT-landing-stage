@@ -6,89 +6,44 @@ const TestimonialSlider = () => {
   return (
     <Fragment>
       <Slider
-        {...sliderProps.marqueeSliderRight}
-        className="marquee-slider-right testi-slider-right"
+        {...sliderProps.testiSliderCasestudy}
+        className="marquee-slider-right testi-slider-right !mx-[-10px]"
       >
-        <div className="testimonial-item">
+        <div className="testimonial-item px-4">
           <div className="author">
-            <div className="image">
+            {/* <div className="image">
               <img src="assets/images/testimonials/author1.png" alt="Author" />
-            </div>
+            </div> */}
             <div className="title">
-              <b>Dennis J. Lester /</b> CEO &amp; Founder
+              <b> Real Estate Developer CRM Implementation</b> Case Study 1:
             </div>
           </div>
           <div className="author-text">
-            At vero eoset accusamus iusto dignissimos ducimus blanditiis
-            praesentium voluptatume delenitie corruptie dolores molestias
-          </div>
-          <div className="testi-footer">
-            <div className="ratting">
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-            </div>
-            <span className="text">
-              <span>4.7/5</span> on Trustpilot
-            </span>
+            <b>Client:</b> Mid-sized real estate firm, Chennai <br />
+            <b>Challenge:</b> Manual lead tracking, poor customer follow-up.{" "}
+            <br />
+            <b>Solution:</b> Implemented Salesforce Sales Cloud with automation
+            for lead assignment and customer tracking. <br />
+            <b>Result:</b> 40% increase in lead conversion and faster follow-up
+            times. <br />
           </div>
         </div>
-        <div className="testimonial-item">
+        <div className="testimonial-item px-4">
           <div className="author">
-            <div className="image">
-              <img src="assets/images/testimonials/author2.png" alt="Author" />
-            </div>
+            {/* <div className="image">
+              <img src="assets/images/testimonials/author1.png" alt="Author" />
+            </div> */}
             <div className="title">
-              <b>Nicholas S. Moore /</b> Manager
+              <b> CRM for Construction Vendor Management</b> Case Study 2:
             </div>
           </div>
           <div className="author-text">
-            At vero eoset accusamus iusto dignissimos ducimus blanditiis
-            praesentium voluptatume delenitie corruptie dolores molestias
-          </div>
-          <div className="testi-footer">
-            <div className="ratting">
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-            </div>
-            <span className="text">
-              <span>4.7/5</span> on Trustpilot
-            </span>
-          </div>
-        </div>
-        <div className="testimonial-item">
-          <div className="author">
-            <div className="image">
-              <img src="assets/images/testimonials/author3.png" alt="Author" />
-            </div>
-            <div className="title">
-              <b>Mark S. Dearing /</b> Designer
-            </div>
-          </div>
-          <div className="author-text">
-            At vero eoset accusamus iusto dignissimos ducimus blanditiis
-            praesentium voluptatume delenitie corruptie dolores molestias
-          </div>
-          <div className="testi-footer">
-            <div className="ratting">
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-              <i className="fas fa-star" />
-            </div>
-            <span className="text">
-              <span>4.7/5</span> on Trustpilot
-            </span>
+            Integrated Salesforce with vendor and supplier modules. <br />
+            Improved invoice tracking and project coordination.
           </div>
         </div>
       </Slider>
-      <Slider
+      {/* <Slider
         {...sliderProps.marqueeSliderLeft}
         className="marquee-slider-left testi-slider-left"
         dir="rtl"
@@ -171,7 +126,7 @@ const TestimonialSlider = () => {
             </span>
           </div>
         </div>
-      </Slider>
+      </Slider> */}
     </Fragment>
   );
 };
