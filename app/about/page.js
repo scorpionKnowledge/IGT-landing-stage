@@ -139,7 +139,7 @@ const page = () => {
                     data-aos-offset={50}
                   >
                     <img
-                      src="assets/images/teams/vijaykumar.png"
+                      src="assets/images/teams/vijaykumar.jpeg"
                       alt="vijaykumar"
                     />
                   </div>

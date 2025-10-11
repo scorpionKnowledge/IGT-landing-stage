@@ -51,8 +51,7 @@ const Index = () => {
                   data-aos-duration={1500}
                   data-aos-offset={50}
                 >
-                  Empowering Real Estate, Health Care, Manufacturing,
-                  Automotive, and beyond with Smart Salesforce Solutions.
+                  Guided by Legacy, Driven by Innovation
                 </h1>
                 <p
                   data-aos="fade-up"
@@ -261,7 +260,10 @@ const Index = () => {
                 <span className="subtitle d-block mb-10">About Us</span>
 
                 <div className="section-title mb-30">
-                  <h2>Guided by Legacy, Driven by Innovation</h2>
+                  <h2>
+                    Empowering Real Estate, Health Care, Manufacturing,
+                    Automotive, and beyond with Smart Salesforce Solutions.
+                  </h2>
                 </div>
                 <p>
                   Infinity Global Tech (IGT) is a Salesforce consulting and
@@ -381,7 +383,7 @@ const Index = () => {
                   data-aos-offset={50}
                 >
                   <img
-                    src="assets/images/teams/vijaykumar.png"
+                    src="assets/images/teams/vijaykumar.jpeg"
                     alt="vijaykumar"
                   />
                 </div>
@@ -418,7 +420,7 @@ const Index = () => {
                   <Link href="/about" legacyBehavior>
                     <img src="assets/images/teams/bushan.jpeg" alt="Team" />
                   </Link>
-                  <div className="social-media">
+                  {/* <div className="social-media">
                     <a href="#">
                       <i className="fab fa-twitter" />
                     </a>
@@ -431,7 +433,7 @@ const Index = () => {
                     <a href="#">
                       <i className="fab fa-pinterest-p" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="description">
                   <h5>Bushan Babu</h5>
@@ -451,7 +453,7 @@ const Index = () => {
                   <Link href="/about" legacyBehavior>
                     <img src="assets/images/teams/suvarna.jpeg" alt="Team" />
                   </Link>
-                  <div className="social-media">
+                  {/* <div className="social-media">
                     <a href="#">
                       <i className="fab fa-twitter" />
                     </a>
@@ -464,7 +466,7 @@ const Index = () => {
                     <a href="#">
                       <i className="fab fa-pinterest-p" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="description">
                   <h5>Suvarna</h5>
@@ -484,7 +486,7 @@ const Index = () => {
                   <Link href="/about" legacyBehavior>
                     <img src="assets/images/teams/sravya.jpeg" alt="Team" />
                   </Link>
-                  <div className="social-media">
+                  {/* <div className="social-media">
                     <a href="#">
                       <i className="fab fa-twitter" />
                     </a>
@@ -497,7 +499,7 @@ const Index = () => {
                     <a href="#">
                       <i className="fab fa-pinterest-p" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="description">
                   <h5>Sravya</h5>
@@ -517,7 +519,7 @@ const Index = () => {
                   <Link href="/about" legacyBehavior>
                     <img src="assets/images/teams/prabhu.jpeg" alt="Team" />
                   </Link>
-                  <div className="social-media">
+                  {/* <div className="social-media">
                     <a href="#">
                       <i className="fab fa-twitter" />
                     </a>
@@ -530,7 +532,7 @@ const Index = () => {
                     <a href="#">
                       <i className="fab fa-pinterest-p" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="description">
                   <h5>Prabhu</h5>
@@ -549,7 +551,7 @@ const Index = () => {
                   <Link href="/about" legacyBehavior>
                     <img src="assets/images/team/member6.png" alt="Team" />
                   </Link>
-                  <div className="social-media">
+                  {/* <div className="social-media">
                     <a href="#">
                       <i className="fab fa-twitter" />
                     </a>
@@ -562,7 +564,7 @@ const Index = () => {
                     <a href="#">
                       <i className="fab fa-pinterest-p" />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="description">
                   <h5>Chandrakala</h5>
@@ -685,7 +687,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="content">
-                  <a href="#" className="category">
+                  <a href="/services" className="category">
                     Salesforce CRM Consulting
                   </a>
                   <ul className="dot-list-bold">
@@ -712,7 +714,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="content">
-                  <a href="#" className="category">
+                  <a href="/services" className="category">
                     Custom App Development
                   </a>
                   <ul className="dot-list-bold">
@@ -743,7 +745,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="content">
-                  <a href="#" className="category">
+                  <a href="/services" className="category">
                     Integration Services
                   </a>
                   <ul className="dot-list-bold">
@@ -771,7 +773,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="content">
-                  <a href="#" className="category">
+                  <a href="/services" className="category">
                     Real Estate CRM Solutions
                   </a>
                   <ul className="dot-list-bold">
@@ -801,7 +803,7 @@ const Index = () => {
                   />
                 </div>
                 <div className="content">
-                  <a href="#" className="category">
+                  <a href="/services" className="category">
                     Support & Maintenance
                   </a>
                   <ul className="dot-list-bold">
@@ -842,15 +844,14 @@ const Index = () => {
                   </span>
                   <div className="content">
                     <span
-                      className="count-text k-plus"
+                      className="count-text "
                       data-speed={3000}
                       data-stop={25}
                     >
-                      <Counter end={25} />
+                      {/* <Counter end={50} /> */}
+                      35%
                     </span>
-                    <span className="counter-title">
-                      100% Satisficed Clients
-                    </span>
+                    <span className="counter-title">Boost in deal closure</span>
                   </div>
                 </div>
               </div>
@@ -863,14 +864,16 @@ const Index = () => {
                 >
                   <div className="content">
                     <span
-                      className="count-text k-plus"
+                      className="count-text"
+                      //  k-plus
                       data-speed={3000}
                       data-stop={235}
                     >
-                      <Counter end={235} />
+                      {/* <Counter end={235} /> */}
+                      50%
                     </span>
                     <span className="counter-title">
-                      Task Complete For Global Clients
+                      Reduction in administrative work
                     </span>
                   </div>
                   <span className="dots">
@@ -903,14 +906,16 @@ const Index = () => {
                   </span>
                   <div className="content">
                     <span
-                      className="count-text plus"
+                      className="count-text "
+                      // plus
                       data-speed={3000}
                       data-stop={1052}
                     >
-                      <Counter end={1052} />
+                      {/* <Counter end={1052} /> */}
+                      80%
                     </span>
                     <span className="counter-title">
-                      Regular Free Registation
+                      Faster lead response time
                     </span>
                   </div>
                 </div>
@@ -983,12 +988,12 @@ const Index = () => {
                   src="assets/images/about/management1.png"
                   alt="Management"
                 />
-                <div className="management-over">
+                {/* <div className="management-over">
                   <img
                     src="assets/images/about/management2.png"
                     alt="Management"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
