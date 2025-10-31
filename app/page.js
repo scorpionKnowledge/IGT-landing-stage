@@ -206,7 +206,7 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
+          {/* <div className="row justify-content-center">
             <div className="col-xl-9">
               <blockquote
                 className="blockquote-one text-white"
@@ -229,7 +229,7 @@ const Index = () => {
                 </div>
               </blockquote>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* Services Area End */}
@@ -340,7 +340,7 @@ const Index = () => {
         </div>
       </section>
       {/* About Area End */}
-      <section className="innovation-dedication-area py-130 rpy-100">
+      <section className="innovation-dedication-area py-50 rpy-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -672,8 +672,8 @@ const Index = () => {
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 col-sm-8">
+          <div className="row justify-content-center keyofferList">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -699,7 +699,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -730,7 +730,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -758,7 +758,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8">
+            <div className="col-lg-6 col-md-6 col-sm-12">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -789,7 +789,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-8">
+            {/* <div className="col-lg-4 col-md-6 col-sm-8">
               <div
                 className="fancy-box style-two"
                 data-aos="fade-up"
@@ -815,7 +815,7 @@ const Index = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -824,6 +824,11 @@ const Index = () => {
       <div className="counter-timeline-area">
         <div className="container">
           <div className="counter-timeline-wrap">
+            <div className="row no-gap justify-content-center">
+              <div className="col-lg-12">
+                <h3 className="sec-title">Benifits of CRM</h3>
+              </div>
+            </div>
             <div className="row no-gap justify-content-center">
               <div className="col-lg-4 col-sm-6">
                 <div
@@ -1001,7 +1006,7 @@ const Index = () => {
       </section>
       {/* Management Area End */}
       {/* Testimonials Area Start */}
-      <section className="testimonials-area pt-130 rpt-100 pb-80 rpb-50">
+      {/* <section className="testimonials-area pt-130 rpt-100 pb-80 rpb-50">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-9 col-md-11">
@@ -1017,10 +1022,10 @@ const Index = () => {
           </div>
         </div>
         <div className="case-studies-slider">
-          {/* <TestimonialSlider /> */}
+        
           <TestimonialSliderCaseStudy />
         </div>
-      </section>
+      </section> */}
       {/* Testimonials Area End */}
       {/* Blog Area Start */}
       {/* <section className="blog-area pb-100 rpb-70">
@@ -1153,7 +1158,7 @@ const Index = () => {
       </section> */}
       {/* Blog Area End */}
 
-      <section className="testimonials-area pt-130 rpt-100 pb-80 rpb-50">
+      {/* <section className="testimonials-area pt-130 rpt-100 pb-80 rpb-50">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-xl-7 col-lg-9 col-md-11">
@@ -1169,10 +1174,10 @@ const Index = () => {
           </div>
         </div>
         <TestimonialSliderTesti />
-      </section>
+      </section> */}
 
       {/* Client Logos Area Start */}
-      <section className="client-logo-area pb-90 rpb-65">
+      <section className="client-logo-area pb-40 pt-40 rpb-65">
         {/* <div
           className="section-title text-center mb-60"
           data-aos="fade-up"
@@ -1188,7 +1193,7 @@ const Index = () => {
             data-aos-duration={1000}
             data-aos-offset={50}
           >
-            <a href="#">
+            <a href="https://www.tuyahomes.com/" target="_blank">
               <img
                 src="assets/images/imgs/brand/logo001.png"
                 alt="Client Logo"
@@ -1202,7 +1207,7 @@ const Index = () => {
             data-aos-duration={1000}
             data-aos-offset={50}
           >
-            <a href="#">
+            <a href="https://www.dhiyasoft.com/" target="_blank">
               <img
                 src="assets/images/imgs/brand/logo002.png"
                 alt="Client Logo"

@@ -42,7 +42,7 @@ const DefaultFooter = () => {
               >
                 <div className="logo mb-10">
                   <Link href="/">
-                    <h6>Infinity Global Tech</h6>
+                    <h6 className="logo-title">Infinity Global Tech</h6>
                   </Link>
                 </div>
                 {/* <p>Digital Business Consulting Agency</p> */}
@@ -82,7 +82,7 @@ const DefaultFooter = () => {
                 more connected than ever. We help businesses with an upgraded
                 next-gen CRM and automation solution …
               </p>
-              <div className="social-style-one">
+              {/* <div className="social-style-one">
                 <a href="#">
                   <i className="fab fa-twitter" />
                 </a>
@@ -95,7 +95,7 @@ const DefaultFooter = () => {
                 <a href="#">
                   <i className="fab fa-pinterest-p" />
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="d-none col-xl-3 col-lg-4 col-sm-6 order-xl-2">

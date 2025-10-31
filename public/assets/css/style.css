@@ -12356,7 +12356,7 @@ a.theme-btn.style-four:hover {
 
 .counter-timeline-wrap {
   border-radius: 15px;
-  padding: 100px 20px 70px;
+  padding: 60px 20px 70px;
   background: var(--primary-color);
 }
 
@@ -13966,4 +13966,23 @@ a.theme-btn.style-four:hover {
   margin-bottom: 20px;
   color: var(--heading-color);
   letter-spacing: -0.72px;
+}
+.keyofferList {
+  max-width: 60rem;
+  margin: auto;
+}
+.sec-title {
+  margin-bottom: 3rem;
+  text-align: center;
+  color: var(--lighter-color);
+  line-height: 1.15;
+  font-size: 48px;
+  font-weight: 600;
+}
+.logo-title {
+  text-align: center;
+  color: var(--lighter-color);
+  line-height: 1.15;
+  font-size: 36px;
+  font-weight: 600;
 }
