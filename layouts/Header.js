@@ -106,7 +106,7 @@ const Nav = ({
                 src={logo}
                 alt="Logo"
                 title="Logo"
-                style={{ maxWidth: "180px" }}
+                style={{ maxWidth: "80px", padding: "4px" }}
               />
             </Link>
           </div>
@@ -143,7 +143,7 @@ const Nav = ({
                 src={logo}
                 alt="Logo"
                 title="Logo"
-                style={{ maxWidth: "180px" }}
+                style={{ maxWidth: "80px", padding: "4px" }}
               />
             </Link>
           </div>
