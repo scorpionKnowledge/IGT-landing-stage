@@ -55,7 +55,7 @@ const DefaultHeader = ({ onePage }) => {
                     src="assets/images/logos/logo.png"
                     alt="Logo"
                     title="Logo"
-                    style={{ maxWidth: "180px" }}
+                    style={{ maxWidth: "80px", padding: "4px" }}
                   />
                 </Link>
               </div>
@@ -67,7 +67,7 @@ const DefaultHeader = ({ onePage }) => {
                   logo="assets/images/logos/logo.png"
                   menus={menus}
                   onePage={onePage}
-                  style={{ maxWidth: "180px" }}
+                  style={{ maxWidth: "80px", padding: "4px" }}
                 />
               </nav>
               {/* Main Menu End*/}

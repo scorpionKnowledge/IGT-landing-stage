@@ -549,7 +549,10 @@ const Index = () => {
               >
                 <div className="image cursor-pointer">
                   <Link href="/about" legacyBehavior>
-                    <img src="assets/images/team/member6.png" alt="Team" />
+                    <img
+                      src="assets/images/teams/Chandrakala.jpeg"
+                      alt="Team"
+                    />
                   </Link>
                   {/* <div className="social-media">
                     <a href="#">
@@ -606,6 +609,48 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <section
+        className="cta-area bgs-cover py-130 rpy-100"
+        style={{ backgroundImage: "url(assets/images/backgrounds/cta.jpg)" }}
+      >
+        <div className="container">
+          <div className="row align-items-center justify-content-between">
+            <div className="col-xl-6 col-lg-8">
+              <div
+                className="cta-content text-white rmb-35"
+                data-aos="fade-left"
+                data-aos-duration={1000}
+                data-aos-offset={50}
+              >
+                <div className="section-title mb-40">
+                  <h2>Ready work together to implement CRM?</h2>
+                </div>
+                <Link legacyBehavior href="/contact">
+                  <a className="theme-btn">
+                    Contact Us <i className="far fa-arrow-right" />
+                  </a>
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div
+                className="cta-btn text-lg-center text-start ps-lg-0 ps-2"
+                data-aos="zoom-in-right"
+                data-aos-duration={1000}
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=oQYgufbySOw"
+                  className="mfp-iframe video-play"
+                >
+                  <i className="fas fa-play" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Team Area End */}
       {/* CTA Area Start */}
       {/* <section

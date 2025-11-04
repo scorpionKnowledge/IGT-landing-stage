@@ -360,7 +360,7 @@ const page = () => {
                     data-aos-offset={50}
                   >
                     <img
-                      src="assets/images/teams/fullsize/sravya.jpeg"
+                      src="assets/images/teams/fullsize/Chandrakala.jpeg"
                       alt="sravya"
                     />
                   </div>
