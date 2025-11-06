@@ -55,7 +55,7 @@ const DefaultHeader = ({ onePage }) => {
                     src="assets/images/logos/logo.png"
                     alt="Logo"
                     title="Logo"
-                    style={{ maxWidth: "80px", padding: "4px" }}
+                    style={{ maxWidth: "220px", padding: "4px" }}
                   />
                 </Link>
               </div>
@@ -67,15 +67,15 @@ const DefaultHeader = ({ onePage }) => {
                   logo="assets/images/logos/logo.png"
                   menus={menus}
                   onePage={onePage}
-                  style={{ maxWidth: "80px", padding: "4px" }}
+                  style={{ maxWidth: "220px", padding: "4px" }}
                 />
               </nav>
               {/* Main Menu End*/}
             </div>
             {/* Nav Search */}
-            <div className="nav-search ms-xl-2 ms-4 py-10">
+            {/* <div className="nav-search ms-xl-2 ms-4 py-10">
               <NavSearch />
-            </div>
+            </div> */}
             {/* Menu Button */}
             <div className="menu-btns ms-lg-auto d-none d-xl-flex">
               <Link href="contact" className="theme-btn">
@@ -106,7 +106,7 @@ const Nav = ({
                 src={logo}
                 alt="Logo"
                 title="Logo"
-                style={{ maxWidth: "80px", padding: "4px" }}
+                style={{ maxWidth: "220px", padding: "4px" }}
               />
             </Link>
           </div>
@@ -143,7 +143,7 @@ const Nav = ({
                 src={logo}
                 alt="Logo"
                 title="Logo"
-                style={{ maxWidth: "80px", padding: "4px" }}
+                style={{ maxWidth: "220px", padding: "4px" }}
               />
             </Link>
           </div>

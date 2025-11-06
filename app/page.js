@@ -624,7 +624,7 @@ const Index = () => {
                 data-aos-offset={50}
               >
                 <div className="section-title mb-40">
-                  <h2>Ready work together to implement CRM?</h2>
+                  <h2>Ready to work together to implement CRM?</h2>
                 </div>
                 <Link legacyBehavior href="/contact">
                   <a className="theme-btn">
@@ -871,7 +871,7 @@ const Index = () => {
           <div className="counter-timeline-wrap">
             <div className="row no-gap justify-content-center">
               <div className="col-lg-12">
-                <h3 className="sec-title">Benifits of CRM</h3>
+                <h3 className="sec-title">Benefits of CRM</h3>
               </div>
             </div>
             <div className="row no-gap justify-content-center">

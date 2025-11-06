@@ -57,7 +57,11 @@ const DefaultFooter = () => {
               >
                 <h5>Subscribe Our Newsletter</h5>
                 <form className="newsletter-form mt-15" action="#">
-                  <input type="email" placeholder="Email Address" required="" />
+                  <input
+                    type="email"
+                    placeholder="Enter Email Address"
+                    required=""
+                  />
                   <button type="submit">
                     Sign Up <i className="far fa-arrow-right" />
                   </button>
@@ -1508,7 +1512,11 @@ const Footer8 = () => {
                   <label htmlFor="email-address">
                     <i className="fas fa-envelope" />
                   </label>
-                  <input type="email" placeholder="Email Address" required="" />
+                  <input
+                    type="email"
+                    placeholder="Enter Email Address"
+                    required=""
+                  />
                   <button type="submit">
                     <b>
                       Sign Up <i className="far fa-arrow-right" />

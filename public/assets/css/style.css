@@ -4293,6 +4293,7 @@ a.theme-btn.style-four:hover {
   margin-top: -8px;
   position: relative;
 }
+
 .section-title h2 {
   margin-bottom: 20px;
   letter-spacing: -1.44px;
@@ -13985,4 +13986,8 @@ a.theme-btn.style-four:hover {
   line-height: 1.15;
   font-size: 36px;
   font-weight: 600;
+}
+
+.section-title.team-title {
+  margin-top: 10px !important;
 }

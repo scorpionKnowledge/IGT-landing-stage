@@ -8,7 +8,7 @@ const page = () => {
   return (
     <AkpagerLayout>
       <PageBanner pageName={"Team Member"} />{" "}
-      <section className="innovation-dedication-area py-130 rpy-100">
+      <section className="innovation-dedication-area py-100 rpy-30">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

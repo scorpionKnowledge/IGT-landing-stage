@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
       <AkpagerLayout onePage={true}>
-        <PageBanner pageName={"INFINITY GLOBAL TECH"} />
+        <PageBanner pageName={"About us"} />
         {/* About Area Start */}
         <section className="about-area py-90 rpy-60">
           <div className="container">
@@ -96,7 +96,7 @@ const page = () => {
         </section>
         {/* About Area End */}
 
-        <section className="innovation-dedication-area py-130 rpy-100">
+        <section className="innovation-dedication-area py-100 rpy-30">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -149,7 +149,7 @@ const page = () => {
           </div>
         </section>
         {/* Innovation Dedication Area End */}
-        <section className="innovation-dedication-area py-130 rpy-100">
+        <section className="innovation-dedication-area py-100 rpy-30">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -201,7 +201,7 @@ const page = () => {
         </section>
         {/* Innovation Dedication Area End */}
 
-        <section className="innovation-dedication-area py-130 rpy-100">
+        <section className="innovation-dedication-area py-100 rpy-30">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -250,7 +250,7 @@ const page = () => {
           </div>
         </section>
         {/* Innovation Dedication Area End */}
-        <section className="innovation-dedication-area py-130 rpy-100">
+        <section className="innovation-dedication-area py-100 rpy-30">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -300,7 +300,7 @@ const page = () => {
         </section>
         {/* Innovation Dedication Area End */}
 
-        <section className="innovation-dedication-area py-130 rpy-100">
+        <section className="innovation-dedication-area py-100 rpy-30">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
@@ -348,7 +348,7 @@ const page = () => {
           </div>
         </section>
         {/* Innovation Dedication Area End */}
-        <section className="innovation-dedication-area py-130 rpy-100">
+        <section className="innovation-dedication-area py-100 rpy-30">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
