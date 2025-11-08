@@ -40,7 +40,7 @@ const DefaultHeader = ({ onePage }) => {
     { id: 1, href: "/", title: "Home" },
     { id: 8, href: "/about", title: "About Us" },
     { id: 3, href: "/services", title: "services" },
-    // { id: 2, href: "/contact", title: "Contact Us" },
+    { id: 2, href: "/contact", title: "Contact Us" },
   ];
   return (
     <header className="main-header menu-absolute header-white no-border">
