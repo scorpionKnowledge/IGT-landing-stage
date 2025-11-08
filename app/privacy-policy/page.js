@@ -157,18 +157,8 @@ const page = () => {
                 <h3>Contact Us</h3>
                 <p>
                   If you have any questions about this Privacy Policy, please{" "}
-                  <a
-                    href="https://www.dhiyasoft.com/contact-us/"
-                    target="_blank"
-                  >
+                  <a href="/contact" target="_blank" className="text-primary">
                     contact us
-                  </a>{" "}
-                  at{" "}
-                  <a
-                    href="mailto:info@infinityglobaltech.net"
-                    className="text-primary"
-                  >
-                    info@infinityglobaltech.net
                   </a>
                   .
                 </p>
