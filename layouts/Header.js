@@ -40,6 +40,12 @@ const DefaultHeader = ({ onePage }) => {
     { id: 1, href: "/", title: "Home" },
     { id: 8, href: "/about", title: "About Us" },
     { id: 3, href: "/services", title: "services" },
+    // { id: 2, href: "/contact", title: "Contact Us" },
+  ];
+  const mobileMenus = [
+    { id: 1, href: "/", title: "Home" },
+    { id: 8, href: "/about", title: "About Us" },
+    { id: 3, href: "/services", title: "services" },
     { id: 2, href: "/contact", title: "Contact Us" },
   ];
   return (
@@ -66,6 +72,7 @@ const DefaultHeader = ({ onePage }) => {
                 <Nav
                   logo="assets/images/logos/logo.png"
                   menus={menus}
+                  mobileMenus={mobileMenus}
                   onePage={onePage}
                   style={{ maxWidth: "220px", padding: "4px" }}
                 />
@@ -95,6 +102,7 @@ const Nav = ({
   dark,
   onePage,
   menus,
+  mobileMenus,
 }) => {
   return (
     <Fragment>
@@ -162,7 +170,7 @@ const Nav = ({
           eventKey="navbar-collapse"
           className="navbar-collapse clearfix"
         >
-          <MobileMenu onePage={onePage} menus={menus} />
+          <MobileMenu onePage={onePage} mobileMenus={mobileMenus} />
         </Accordion.Collapse>
       </Accordion>
     </Fragment>
@@ -198,7 +206,7 @@ const NavSearch = () => {
   );
 };
 
-const MobileMenu = ({ sidebar, onePage, menus }) => {
+const MobileMenu = ({ sidebar, onePage, mobileMenus }) => {
   const [activeMenu, setActiveMenu] = useState("");
   const [multiMenu, setMultiMenu] = useState("");
   const activeMenuSet = (value) =>
@@ -217,7 +225,7 @@ const MobileMenu = ({ sidebar, onePage, menus }) => {
             sidebar ? "sidebar-menu" : "navigation"
           } onepage clearfix`}
         >
-          {menus.map((menu) => (
+          {mobileMenus.map((menu) => (
             <li key={menu.id}>
               <a href={`${menu.href}`}>{menu.title}</a>
             </li>
