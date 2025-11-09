@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Link from "next/link";
 
 const Footer = ({ footer }) => {
@@ -28,6 +29,40 @@ const Footer = ({ footer }) => {
 export default Footer;
 
 const DefaultFooter = () => {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("");
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!email.trim()) {
+      setStatus("⚠️ Please enter a valid email address.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append(process.env.NEXT_PUBLIC_SUBSCRIBER_EMAIL_FIELD, email); // Replace with your field name
+
+    try {
+      await fetch(process.env.NEXT_PUBLIC_SUBSCRIBER_EMAIL_FORM_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: formData,
+      });
+
+      setStatus("✅ Successfully subscribed!");
+      setEmail("");
+    } catch (err) {
+      console.error("Google Form submit error:", err);
+      setStatus("❌ Subscription failed. Please try again.");
+    }
+
+    // Clear status message after 3 seconds
+    setTimeout(() => {
+      setStatus("");
+    }, 3000);
+  };
+
   return (
     <footer className="main-footer footer-one rel z-1 mt-100">
       <div className="container">
@@ -56,16 +91,23 @@ const DefaultFooter = () => {
                 data-aos-offset={50}
               >
                 <h5>Subscribe Our Newsletter</h5>
-                <form className="newsletter-form mt-15" action="#">
+                <form
+                  className="newsletter-form mt-15"
+                  action="#"
+                  onSubmit={onSubmit}
+                >
                   <input
                     type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter Email Address"
-                    required=""
+                    required
                   />
                   <button type="submit">
                     Sign Up <i className="far fa-arrow-right" />
                   </button>
                 </form>
+                {status && <p className="status-message">{status}</p>}
               </div>
             </div>
           </div>
@@ -84,7 +126,7 @@ const DefaultFooter = () => {
               <p>
                 At IGT, we support your businesses to run smoother, smarter, and
                 more connected than ever. We help businesses with an upgraded
-                next-gen CRM and automation solution …
+                next-gen CRM and automation solution.
               </p>
               {/* <div className="social-style-one">
                 <a href="#">
