@@ -4,8 +4,9 @@ import Link from "next/link";
 
 export const metadata = {
   title: {
-    absolute: "CRM & Mobile App Development Services | Salesforce Experts - IGT",
-  }
+    absolute:
+      "CRM & Mobile App Development Services | Salesforce Experts - IGT",
+  },
 };
 
 const page = () => {
@@ -27,13 +28,13 @@ const page = () => {
                   <h2>Scale Smarter</h2>
                 </div>
                 <p>
-                Stay connected, streamlined, and future ready with our solutions. We simplify your workflow through smart automation, integration, and scalable tools tailored to your business.
+                  Stay connected, streamlined, and future ready with our
+                  solutions. We simplify your workflow through smart automation,
+                  integration, and scalable tools tailored to your business.
                 </p>
-                <p>
-                Ready to transform your business
-                </p>
+                <p>Ready to transform your business</p>
                 <Link href="/contact" className="theme-btn">
-                Connect with us now <i className="far fa-arrow-right" />
+                  Connect with us now <i className="far fa-arrow-right" />
                 </Link>
               </div>
             </div>
@@ -69,7 +70,7 @@ const page = () => {
                 </div>
                 <div className="logo">
                   <Link href="/">
-                    <img src="assets/images/logos/logo-top.png" alt="Logo" />
+                    <img src="assets/images/logos/favicon.png" alt="Logo" />
                   </Link>
                 </div>
               </div>
@@ -106,18 +107,15 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <Link href="/crm-consulting">
-                    CRM Consulting Services
-                    </Link>
+                    <Link href="/crm-consulting">CRM Consulting Services</Link>
                   </h5>
-                  <h6>
-                  Ignite Growth with Intelligent CRM Innovation
-                  </h6>
+                  <h6>Ignite Growth with Intelligent CRM Innovation</h6>
                   <p>
-                    At Infinity Global Tech, we enable business to redefine their customer engagement and operational capabilities through a unique, tailored Salesforce consulting services...
+                    At Infinity Global Tech, we enable business to redefine
+                    their customer engagement and operational capabilities
+                    through a unique, tailored Salesforce consulting services...
                   </p>
                   <Link href="crm-consulting">Read more</Link>
-
                 </div>
                 <div className="bg">
                   <img
@@ -140,16 +138,19 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <Link href="crm-implementation">CRM Implementation Services</Link>
+                    <Link href="crm-implementation">
+                      CRM Implementation Services
+                    </Link>
                   </h5>
                   <h6>
-                  Tailored CRM Solutions for Seamless Digital Transformation
+                    Tailored CRM Solutions for Seamless Digital Transformation
                   </h6>
                   <p>
-                  At Infinity Global Tech, our expert team is all set to help your business start your digital journey with our customized Salesforce implementation services...
+                    At Infinity Global Tech, our expert team is all set to help
+                    your business start your digital journey with our customized
+                    Salesforce implementation services...
                   </p>
                   <Link href="crm-implementation">Read more</Link>
-
                 </div>
                 <div className="bg">
                   <img
@@ -173,17 +174,18 @@ const page = () => {
                 <div className="content">
                   <h5>
                     <Link href="ongoing-maintenance-support">
-                    Ongoing Maintenance & Support
+                      Ongoing Maintenance & Support
                     </Link>
                   </h5>
                   <h6>
-                  Keep Your Salesforce Running at Peak Performance with Trusted Expert Support
+                    Keep Your Salesforce Running at Peak Performance with
+                    Trusted Expert Support
                   </h6>
                   <p>
-                  At Infinity Global Tech, we understand how important an updated CRM is for your business...
+                    At Infinity Global Tech, we understand how important an
+                    updated CRM is for your business...
                   </p>
                   <Link href="ongoing-maintenance-support">Read more</Link>
-
                 </div>
                 <div className="bg">
                   <img
@@ -205,16 +207,20 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h5>
-                    <Link href="mobile-app-development">Mobile App Development</Link>
+                    <Link href="mobile-app-development">
+                      Mobile App Development
+                    </Link>
                   </h5>
                   <h6>
-                  Empowering Businesses with Scalable, User-Friendly Mobile Solutions
+                    Empowering Businesses with Scalable, User-Friendly Mobile
+                    Solutions
                   </h6>
                   <p>
-                  Infinity Global Tech makes mobile app development easy with our full-service approach to developing mobile business and client solutions...
+                    Infinity Global Tech makes mobile app development easy with
+                    our full-service approach to developing mobile business and
+                    client solutions...
                   </p>
                   <Link href="mobile-app-development">Read more</Link>
-
                 </div>
                 <div className="bg">
                   <img
