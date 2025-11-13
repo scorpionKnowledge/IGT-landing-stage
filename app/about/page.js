@@ -153,7 +153,7 @@ const page = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <div className="innovation-dedication-images">
+                <div className="innovation-dedication-images team-members">
                   <div
                     // className="image-one"
                     data-aos="fade-right"
@@ -232,7 +232,7 @@ const page = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="innovation-dedication-images">
+                <div className="innovation-dedication-images  team-members">
                   <div
                     // className="image-one"
                     data-aos="fade-right"
@@ -254,7 +254,7 @@ const page = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <div className="innovation-dedication-images">
+                <div className="innovation-dedication-images  team-members">
                   <div
                     // className="image-one"
                     data-aos="fade-right"
@@ -330,7 +330,7 @@ const page = () => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <div className="innovation-dedication-images">
+                <div className="innovation-dedication-images  team-members">
                   <div
                     // className="image-one"
                     data-aos="fade-right"
@@ -352,7 +352,7 @@ const page = () => {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
-                <div className="innovation-dedication-images">
+                <div className="innovation-dedication-images  team-members">
                   <div
                     // className="image-one"
                     data-aos="fade-right"

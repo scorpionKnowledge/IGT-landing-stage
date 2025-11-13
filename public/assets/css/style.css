@@ -7473,9 +7473,17 @@ a.theme-btn.style-four:hover {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .team-member .image {
   position: relative;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .team-member .image {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .team-member .image img {
   border-radius: 12px;
@@ -12186,6 +12194,12 @@ a.theme-btn.style-four:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+}
+.innovation-dedication-images.team-members img {
+  max-width: 30rem;
+  margin: auto;
+  display: table;
 }
 .innovation-dedication-images .image-one {
   width: 50%;
