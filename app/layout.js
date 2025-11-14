@@ -14,11 +14,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    template: "CRM Consulting & SaaS Solutions | Infinity Global Tech",
-    default: "CRM Consulting & SaaS Solutions | Infinity Global Tech", // a default is required when creating a template
+    template: "Infinity Global Tech",
+    default: "Infinity Global Tech", // a default is required when creating a template
   },
-  description: "Infinity Global Tech is a trusted Salesforce consulting partner offering Salesforce implementation, Quick Start packages, and Data Cloud & Einstein AI solutions tailored for businesses.",
-  keywords: "CRM consulting services, CRM implementation, Salesforce Quick Start packages, Software testing ser-vices, Salesforce Partner, SaaS software products, Custom software solutions"
+  description:
+    "Infinity Global Tech is a trusted Salesforce consulting partner offering Salesforce implementation, Quick Start packages, and Data Cloud & Einstein AI solutions tailored for businesses.",
+  keywords:
+    "CRM consulting services, CRM implementation, Salesforce Quick Start packages, Software testing ser-vices, Salesforce Partner, SaaS software products, Custom software solutions",
 };
 
 export default function RootLayout({ children }) {
